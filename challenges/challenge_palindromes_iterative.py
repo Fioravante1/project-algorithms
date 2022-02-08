@@ -1,6 +1,6 @@
+# https://stackoverflow.com/questions/952110/recursive-function-palindrome-in-python
 def is_palindrome_iterative(word):
-    if len(word) < 2:
-        return True
-    if word[0] != word[-1]:
+    if not word:
         return False
-    return True
+    else:
+        return word == word[::-1]
